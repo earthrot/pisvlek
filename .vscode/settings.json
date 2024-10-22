@@ -1,0 +1,5 @@
+{
+	"vsicons.associations.folders": [
+		{ "icon": "api", "extensions": ["filesystem"], "format": "svg" }
+	  ]
+}

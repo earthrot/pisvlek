@@ -1,0 +1,3 @@
+port: 54321
+database:
+  filename: ./assets/pisvlek.sqlite3

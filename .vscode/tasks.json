@@ -1,0 +1,44 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Watch tailwind",
+			"type": "shell",
+			"command": "tailwindcss -i src/pisvlek.css -o public/css/pisvlek.min.css --watch --minify",
+			"group": "none",
+			"presentation": {
+				"reveal": "always",
+				"panel": "new"
+			},
+			"runOptions": {
+				"runOn": "default"
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "make_docker",
+			"type": "shell",
+			"command": ".\\scripts\\make_docker.cmd",
+			"group": "none",
+			"presentation": {
+				"reveal": "always",
+				"panel": "new"
+			},
+			"runOptions": {
+				"runOn": "default"
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "sqlc generate",
+			"type": "shell",
+			"command": "sqlc generate",
+			"group": "none",
+
+			"runOptions": {
+				"runOn": "default"
+			},
+			"problemMatcher": []
+		}
+	]
+}

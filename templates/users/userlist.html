@@ -1,0 +1,14 @@
+<div class="grid">
+	<div class="grid grid-cols-3 font-bold gap-8">
+		<div>ID</div>
+		<div>Email</div>
+		<div>Full Name</div>
+	</div>
+	{% for User in Users %}
+		<div class="grid grid-cols-3 gap-8">
+			<div>{{ User.ID }}</div>
+			<div>{{ User.Email }}</div>
+			<div>{{ User.FullName }}</div>
+		</div>
+	{% endfor %}
+</div>
